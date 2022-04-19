@@ -1,7 +1,10 @@
 * {
     box-sizing: border-box;
-
+  
   }
+
+  @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+  
   
   .row {
     display: flex;
@@ -9,6 +12,7 @@
     justify-content: center;
     padding-top: 100px;
     padding-bottom: 20px;
+  
   }
   
   .col-4 {
@@ -19,6 +23,11 @@
    
  } 
 
+ .text{
+     padding-top: 50px;
+     font-family: 'Kumbh Sans', sans-serif;
+    
+ }
 
  .image-container {
     margin: auto;
@@ -52,6 +61,102 @@
 
  }
 
+ h1 {
+     color: hsl(0, 0%, 0%);
+     font-size: 40px;
+     font-weight: 700;
+ 
+ }
+
+ h3, h4 {
+     color: hsl(26, 100%, 55%);
+     font-weight: 700;
+ 
+ }
+
+ h3 {
+
+    font-size: 18px;
+ }
+
+ h2 {
+     font-weight: 700;
+ }
+
+ span {
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    font-size: 18px;
+     background-color: hsl(25, 100%, 94%);
+ }
+
+ p {
+     color: hsl(219, 9%, 45%);
+     font-size: 16px;
+     font-weight: 400;
+ 
+ }
+
+ h5 {
+    text-decoration: line-through;
+    color: hsl(220, 14%, 75%);
+    font-size: 16px;
+    
+ }
+
+ .cart-button {
+    background-color: hsl(26, 100%, 55%);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+.cart-button img{
+    width: 14px;
+    height: 14px;
+    margin-left: 3px;
+    margin-right: 10px;
+   
+}
+
+.minus-button {
+    background-color: hsl(223, 64%, 98%);
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 160px;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+
+.img-minus {
+    float: left;  
+
+  }
+
+  .img-plus {
+
+    float: right;  
+  }
  @media (max-width: 800px) {
     .row {
       flex-direction: column;
@@ -61,5 +166,8 @@
     .col-4 {
 
         width: 100%;
+    }
+    .text{
+        padding-top: 10px;
     }
   }

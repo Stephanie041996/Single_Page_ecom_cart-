@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+ 
+  <link rel="stylesheet" href="style-nav.css">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | E-commerce product page</title>
 
@@ -16,11 +18,21 @@
 </head>
 <body>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+  <div class="topnav" id="myTopnav">
+    <div class="logo">sneakers</div>
+    <a href="#home" class="active">Collections</a>
+    <a href="#men">Men</a>
+    <a href="#women">Women</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <div class="icons"><img class="cart-main" src = "images/icon-cart.svg" alt="cart SVG"/>
+      
+      <img class="profile" src = "images/image-avatar.png" alt="profile SVG"/></div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <img src = "images/icon-menu.svg" alt="menu SVG"/> 
+    </a>
+  </div>
+
 
 <div class="row">
 
@@ -36,22 +48,21 @@
   </div>
   </div>
 
-  <div class="col-4 blue">
+  <div class="col-4 text blue">
 
 
-  Sneaker Company
+  <h3>SNEAKER COMPANY</h3>
 
-  Fall Limited Edition Sneakers
+  <h1>Fall Limited Edition<br> Sneakers</h1>
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
+  <p>These low-profile sneakers are your perfect casual wear<br> companion. Featuring a 
+  durable rubber outer sole, they’ll<br> withstand everything the weather can offer.</p>
 
-  $125.00
-  50%
-  $250.00
+  <h2>$125.00 <span> 50%</span></h2>
+  <h5>$250.00</h5>
 
-  0
-  Add to cart
+  <button class="minus-button"><img class="img-minus" src = "images/icon-minus.svg" alt="minus SVG"/>0<img class="img-plus" src = "images/icon-plus.svg" alt="p plus SVG"/></button>
+  <button class="cart-button"> <img src = "images/icon-cart.svg" alt="cart SVG"/> Add to cart</button>
 </div>
 </div>
 
@@ -62,5 +73,16 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 </body>
 </html>
